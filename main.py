@@ -54,7 +54,7 @@ wm = WeChatMessage(client)
 wea, city,min_temperature ,max_temperature= get_weather()
 data = {
   "date": {
-      "value": "{}".format(today.strftime("%Y-%m-%d %H:%M:%S")),
+      "value": "{}".format(today.strftime("%Y-%m-%d")),
       "color": get_color()
   },
   "weather":{"value":wea, "color":get_color()},
